@@ -65,5 +65,6 @@ fun ListOfItems(items: List<Int>) {
         Text(items[it].toString())
     }
     Text(modifier = Modifier.padding(top = 50.dp), text = pagerState.pageCount.toString())
-    Text(modifier = Modifier.padding(top = 100.dp), text = items.size.toString())
+    Text(modifier = Modifier.padding(top = 100.dp), text = pagerState.currentPage.toString())
+    Text(modifier = Modifier.padding(top = 150.dp), text = items.size.toString())
 }
